@@ -2,8 +2,9 @@ from qgis.core import QgsProject
 import time
 import csv
 
-def change_color(id, colour):
+def change_color(id:int, colour:int):
     '''
+    改变红绿灯图层的要素的colour属性值。
     :param id: 红绿灯的id
     :param colour: 红绿灯的颜色，0为绿色，1为红色，2为黄色，3为左转绿色
     '''
